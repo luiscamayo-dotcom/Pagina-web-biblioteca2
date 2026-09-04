@@ -1,0 +1,185 @@
+* {
+    border: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: #def0c1;
+}
+
+.section {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-sup{
+
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-sup__menu{
+    flex-direction: column;
+    display: flex;   
+    width: 50%;
+    height: 100%;
+}
+.header-inf{
+    background-color: #8167df;
+}
+.content{
+    height: 550px;
+    justify-content: space-around;
+}
+.cienañosdesoledad{
+    height: 400px;
+    width: 300px;
+}
+.enagostonosvemos{
+    height: 400px;
+    width: 300px;
+}
+.lahojarasca{
+    height: 400px;
+    width: 300px;
+}   
+
+
+.login{
+    
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo{
+    border-radius: 180%;
+    height: 150px;
+    width: 150px;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nombre{
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    padding-top: 0px;
+    flex-wrap: wrap;
+    padding-left: 25px;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.nombre-biblioteca{
+    font-size: 50px;
+    color: black;
+}
+
+.header-sup__logo{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.registrarse{
+    font-size: 45px;
+    color: black;
+    border: 3px solid black;
+    border-radius: 5px;
+    display: flex;
+    width: 30%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.iniciar-sesion{
+    font-size: 45px;
+    color: black;
+    border: 3px solid black;
+    border-radius: 5px;  
+    width: 30%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio{
+    font-size: 25px;
+    color: black;
+    border: 3px solid black;
+    border-radius: 15px;
+    display: flex;
+    width: 25%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.catalogo{
+    font-size: 25px;
+    color: black;
+    border: 3px solid black;
+    border-radius: 15px;
+    display: flex;
+    width: 25%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.acerca-de{
+    font-size: 25px;
+    color: black;
+    border: 3px solid black;
+    border-radius: 15px;
+    display: flex;
+    width: 25%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.soporte{
+    font-size: 25px;
+    color: black;
+    border: 3px solid black;
+    border-radius: 15px;
+    display: flex;
+    width: 25%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+ 
+}
