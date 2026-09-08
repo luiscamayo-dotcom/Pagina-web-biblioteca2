@@ -35,28 +35,17 @@ body {
     height: 100%;
 }
 .header-inf{
-    background-color: #8167df;
+    
 }
-.content{
-    height: 550px;
-    justify-content: space-around;
-}
-.cienañosdesoledad{
-    height: 400px;
-    width: 300px;
-}
-.enagostonosvemos{
-    height: 400px;
-    width: 300px;
-}
-.lahojarasca{
-    height: 400px;
-    width: 300px;
-}   
 
+.imagenlibro{
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+}
 
 .login{
-    
+
     height: 50%;
     width: 100%;
     display: flex;
@@ -182,4 +171,36 @@ body {
     justify-content: center;
     align-items: center;
  
+}
+
+.content{
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+
+
+}
+
+.content-libros{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.book-info{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+
+
+}
+.book{
+    width: 350px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
