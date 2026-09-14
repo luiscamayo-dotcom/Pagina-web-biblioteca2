@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo - Biblioteca</title>
-  <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
-  <div class="catalogo-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo - Biblioteca</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <!-- Seccion arreglada de el menu principal -->
     <div class="container">
       <div class="section header-sup">
         <div class="header-sup__logo">
@@ -26,9 +26,11 @@
           <!-- Botones de login como enlaces -->
           <div class="login">
             <a href="../pages/registro.html" class="registrarse">Registrarse</a>
-            <a href="../pages/login.html" class="iniciar-sesion">Iniciar sesión</a>
+            <a href="../pages/login.html" class="iniciar-sesion"
+              >Iniciar sesión</a
+            >
           </div>
-          
+
           <!-- Menú principal -->
           <div class="menu">
             <a href="../index.html" class="btn inicio">Inicio</a>
@@ -36,51 +38,81 @@
             <a href="../pages/acercade.html" class="btn acerca-de">Acerca de</a>
             <a href="../pages/soporte.html" class="btn soporte">Soporte</a>
           </div>
-
         </div>
       </div>
     </div>
-    <h1>Catálogo de Libros</h1>
+    <!-- Seccion de el titulo de la pagina catalogo -->
+    <div class="Titulo-catalogo">
+      <h1 class="Titulo-text-catalogo">Catálogo de Libros</h1>
 
-    <!-- Barra de búsqueda y categorías -->
-    <div class="catalogo-barra">
-      <input type="text" id="buscarLibro" placeholder="Buscar libro...">
-      <button id="btnBuscar">bucar</button>
-      <select id="categorias">
-        <option value="todos">Todas las categorías</option>
-        <option value="novela">Novela</option>
-        <option value="historia">Historia</option>
-        <option value="ciencia">Ciencia</option>
-        <option value="poesia">Poesía</option>
-      </select>
+    </div>
+    <div class="catalogo-container">
+
+      <!-- Barra de búsqueda y categorías -->
+      <div class="catalogo-barra">
+        <select id="categorias">
+          <option value="todos">Todas las categorías</option>
+          <option value="novela">Novela</option>
+          <option value="historia">Historia</option>
+          <option value="ciencia">Ciencia</option>
+          <option value="poesia">Poesía</option>
+        </select>
+        <button class="carrito" type="button" aria-label="Carrito de compras">
+          <span aria-hidden="true">&#128722;</span>
+          <span>Carrito</span>
+        </button>
+        <div class="buscarlibro">
+          <input type="text" id="buscarLibro" placeholder="Buscar libro..." />
+          <button id="btnBuscar" type="button">Buscar</button>
+
+        </div>
+        
+      </div>
+
+      <!-- Rejilla de libros -->
+      <div class="catalogo-grid">
+        <div class="libro" data-categoria="novela">
+          <img
+            src="../images/cienañosdesoledad.jpg"
+            alt="Cien años de soledad"
+          />
+          <p>Cien años de soledad</p>
+          <button class="agregar-carrito" type="button">
+            <span>Agregar</span><span class="icono-agregar" aria-hidden="true">+</span>
+          </button>
+        </div>
+        <div class="libro" data-categoria="novela">
+          <img src="../images/enagostonosvemos.jpg" alt="En agosto nos vemos" />
+          <p>En agosto nos vemos</p>
+          <button class="agregar-carrito" type="button">
+            <span>Agregar</span><span class="icono-agregar" aria-hidden="true">+</span>
+          </button>
+        </div>
+        <div class="libro" data-categoria="historia">
+          <img src="../images/lailiada.jpg" alt="La Iliada" />
+          <p>La Iliada</p>
+          <button class="agregar-carrito" type="button">
+            <span>Agregar</span><span class="icono-agregar" aria-hidden="true">+</span>
+          </button>
+        </div>
+        <div class="libro" data-categoria="novela">
+          <img src="../images/lamaria.jpg" alt="La María" />
+          <p>La María</p>
+          <button class="agregar-carrito" type="button">
+            <span>Agregar</span><span class="icono-agregar" aria-hidden="true">+</span>
+          </button>
+        </div>
+        <div class="libro" data-categoria="historia">
+          <img src="../images/laodisea.jpg" alt="La Odisea" />
+          <p>La Odisea</p>
+          <button class="agregar-carrito" type="button">
+            <span>Agregar</span><span class="icono-agregar" aria-hidden="true">+</span>
+          </button>
+        </div>
+      </div>
     </div>
 
-    <!-- Rejilla de libros -->
-    <div class="catalogo-grid">
-      <div class="libro" data-categoria="novela">
-        <img src="../images/cienañosdesoledad.jpg" alt="Cien años de soledad">
-        <p>Cien años de soledad</p>
-      </div>
-      <div class="libro" data-categoria="novela">
-        <img src="../images/enagostonosvemos.jpg" alt="En agosto nos vemos">
-        <p>En agosto nos vemos</p>
-      </div>
-      <div class="libro" data-categoria="historia">
-        <img src="../images/lailiada.jpg" alt="La Iliada">
-        <p>La Iliada</p>
-      </div>
-      <div class="libro" data-categoria="novela">
-        <img src="../images/lamaria.jpg" alt="La María">
-        <p>La María</p>
-      </div>
-      <div class="libro" data-categoria="historia">
-        <img src="../images/laodisea.jpg" alt="La Odisea">
-        <p>La Odisea</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Ruta correcta al JS -->
-  <script src="../Js/script-catalogo.js"></script>
-</body>
+    <!-- Ruta correcta al JS -->
+    <script src="../Js/script-catalogo.js"></script>
+  </body>
 </html>
