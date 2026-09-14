@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soporte - Biblioteca</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="soporte-container">
+    <h1>Centro de Soporte</h1>
+
+    <!-- Barra de búsqueda -->
+    <div class="soporte-barra">
+      <input type="text" id="buscarSoporte" placeholder="Buscar ayuda...">
+      <button id="btnBuscarSoporte">buscar</button>
+    </div>
+
+    <!-- Preguntas frecuentes -->
+    <div class="faq">
+      <h2>Preguntas frecuentes</h2>
+      <ul>
+        <li><button class="faq-btn" data-id="usuario">Olvidé mi usuario</button></li>
+        <li><button class="faq-btn" data-id="devoluciones">Problemas con devoluciones</button></li>
+        <li><button class="faq-btn" data-id="prestamos">No puedo registrar un préstamo</button></li>
+        <li><button class="faq-btn" data-id="catalogo">No encuentro un libro en el catálogo</button></li>
+      </ul>
+    </div>
+
+    <!-- Respuestas dinámicas -->
+    <div id="respuestaSoporte" class="respuesta"></div>
+  </div>
+
+  <script src="../Js/script-soporte.js"></script>
+</body>
+</html>

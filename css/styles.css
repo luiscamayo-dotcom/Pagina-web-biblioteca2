@@ -1,206 +1,525 @@
+/* Reset */
 * {
-    border: 0;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+/* General */
+body {
+    background-color: #f5dbc6;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor */
 .container {
     display: flex;
     flex-wrap: wrap;
 }
 
-body {
-    background-color: #def0c1;
-}
-
+/* Secciones */
 .section {
     display: flex;
     width: 100%;
-    height: 300px;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
-.header-sup{
-
-    height: 200px;
+/* Header superior */
+.header-sup {
+    height: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.header-sup__menu{
-    flex-direction: column;
-    display: flex;   
+/* Logo */
+.header-sup__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 50%;
-    height: 100%;
-}
-.header-inf{
-    
 }
 
-.imagenlibro{
-    height: 450px;
-    width: 350px;
-    object-fit: cover;
-}
-
-.login{
-
-    height: 50%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.menu{
-    height: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-.logo{
-    border-radius: 180%;
+.logo {
+    border-radius: 50%;
     height: 150px;
     width: 150px;
     border: 5px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    margin-right: 15px;
 }
 
-.nombre{
-    
-    height: 100%;
-    width: 100%;
+.nombre {
     display: flex;
-    padding: 10px;
-    padding-top: 0px;
-    flex-wrap: wrap;
-    padding-left: 25px;
-    justify-content: flex-start;
     align-items: center;
-
 }
 
-.nombre-biblioteca{
-    font-size: 50px;
-    color: black;
-}
 
-.header-sup__logo{
 
+/* Menú superior */
+.header-sup__menu {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    flex-direction: column;
     width: 50%;
+    align-items: flex-end;
 }
 
-.registrarse{
-    font-size: 45px;
-    color: black;
-    border: 3px solid black;
-    border-radius: 5px;
+/* Botones generales */
+.btn {
     display: flex;
-    width: 30%;
-    height: 50%;
-    justify-content: center;
-    align-items: center;
-}
-.iniciar-sesion{
-    font-size: 45px;
-    color: black;
-    border: 3px solid black;
-    border-radius: 5px;  
-    width: 30%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.inicio{
-    font-size: 25px;
-    color: black;
-    border: 3px solid black;
-    border-radius: 15px;
-    display: flex;
-    width: 25%;
-    height: 50%;
-    justify-content: center;
-    align-items: center;
- 
-}
-.catalogo{
-    font-size: 25px;
-    color: black;
-    border: 3px solid black;
-    border-radius: 15px;
-    display: flex;
-    width: 25%;
-    height: 50%;
-    justify-content: center;
-    align-items: center;
- 
-}
-.acerca-de{
-    font-size: 25px;
-    color: black;
-    border: 3px solid black;
-    border-radius: 15px;
-    display: flex;
-    width: 25%;
-    height: 50%;
-    justify-content: center;
-    align-items: center;
- 
-}
-.soporte{
-    font-size: 25px;
-    color: black;
-    border: 3px solid black;
-    border-radius: 15px;
-    display: flex;
-    width: 25%;
-    height: 50%;
-    justify-content: center;
-    align-items: center;
- 
-}
-
-.content{
-    display: flex;
-    height: 100%;
-    flex-wrap: wrap;
-
-
-}
-
-.content-libros{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.book-info{
-    display: flex;
-    flex-direction: column;
     font-size: 20px;
-
-
-}
-.book{
-    width: 350px;
-    border: 3px solid black;
-    display: flex;
-    flex-direction: column;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 8px 15px;
+    text-decoration: none;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    width: 24%;
 }
+
+.btn:hover {
+    background-color: #a4c639;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Login */
+.login {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Menú principal */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* Libros */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-libros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.book {
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+}
+
+.imagenlibro {
+    height: 250px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .header-sup {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header-sup__logo, .header-sup__menu {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .btn {
+        width: 80%;
+        font-size: 16px;
+    }
+    .book {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nombre-biblioteca {
+        font-size: 28px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+    .book {
+        width: 100%;
+    }
+}
+/*boton registro*/
+.registrarse, .iniciar-sesion {
+  font-size: 20px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-decoration: none; /* quita el subrayado */
+  display: inline-block;
+  background-color: white;
+  transition: 0.3s;
+}
+
+/* ============= estilos del registro==================*/
+
+.registro-container {
+  max-width: 450px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.registro-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registro-header .logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.registro-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registro-form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.registro-form input {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.registro-form input:focus {
+  outline: none;
+  border-color: #1e88b6;
+  box-shadow: 0 0 5px rgba(30, 136, 182, 0.3);
+}
+
+.btn-registro {
+  background-color: #1e88b6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-registro:hover {
+  background-color: #1565c0;
+}
+
+/* Tabla de usuarios */
+.cardTable {
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead {
+  background-color: #1e88b6;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+/* estilos login*/
+.login-container {
+  max-width: 450px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-header .logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.login-form input {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #1e88b6;
+  box-shadow: 0 0 5px rgba(30, 136, 182, 0.3);
+}
+
+.btn-login {
+  background-color: #1e88b6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #1565c0;
+}
+
+.mensaje {
+  margin-top: 15px;
+  font-size: 16px;
+  text-align: center;
+}
+/*________________is estilo______________________________________________________*/
+.section-dashboard {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+.section-dashboard h2 {
+  margin-bottom: 15px;
+}
+
+.section-dashboard input, .section-dashboard select {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/*_________________________________catalogo__________________________________*/
+.catalogo-container {
+  max-width: 900px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.catalogo-barra {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.catalogo-barra input, .catalogo-barra select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.catalogo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.libro {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.libro img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+/**____________________________estilo acerca de ______________*/
+.acerca-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.logo-acerca {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-acerca img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #0c0649;
+}
+
+.acerca-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0d4f6b;
+}
+
+.acerca-section {
+  margin-bottom: 25px;
+}
+
+.acerca-section h2 {
+  color: #1565c0;
+  margin-bottom: 10px;
+}
+
+.acerca-section p {
+  line-height: 1.6;
+  text-align: justify;
+}
+/*___________________________________-estilo de soporte _____________________*/
+.soporte-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.soporte-barra {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.soporte-barra input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 60%;
+}
+
+.faq ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-btn {
+  background: #1e88b6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.faq-btn:hover {
+  background: #1565c0;
+}
+
+.respuesta {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: justify;
+  color: #333;
+}
+
+.nombre-biblioteca {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+

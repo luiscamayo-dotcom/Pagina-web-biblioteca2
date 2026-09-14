@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestión de Biblioteca</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="is-container">
+    <h1>Biblioteca</h1>
+    <div class="menu-is">
+      <button id="btnUsuarios" class="btn">Usuarios</button>
+      <button id="btnPrestamos" class="btn">Préstamos</button>
+      <button id="btnDevoluciones" class="btn">Devoluciones</button>
+    </div>
+
+    <!-- Secciones dinámicas -->
+    <div id="usuariosSection" class="section-is hidden">
+      <h2>Buscar Usuario</h2>
+      <input type="text" placeholder="Ingrese nombre o correo">
+      <button class="btn"> Buscar</button>
+    </div>
+
+    <div id="prestamosSection" class="section-is hidden">
+      <h2>Buscar Préstamo</h2>
+      <input type="text" placeholder="Ingrese ID de préstamo">
+      <button class="btn"> Buscar</button>
+    </div>
+
+    <div id="devolucionesSection" class="section-is hidden">
+      <h2>Registrar Devolución</h2>
+      <form id="devolucionForm">
+        <label for="fecha">Fecha de devolución</label>
+        <input type="date" id="fecha">
+
+        <label>Estado</label>
+        <select id="estado">
+          <option value="tiempo">A tiempo</option>
+          <option value="retraso">Con retraso</option>
+        </select>
+
+        <button type="submit" class="btn">Confirmar devolución</button>
+      </form>
+      <div id="mensajeDevolucion"></div>
+    </div>
+  </div>
+
+  <script src="../Js/is.js"></script>
+</body>
+</html>
