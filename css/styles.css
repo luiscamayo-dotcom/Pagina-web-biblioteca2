@@ -247,7 +247,9 @@ body {
     }
     .menu {
         flex-direction: column;
+      align-items: center;
         gap: 10px;
+      width: 100%;
     }
     .btn {
         width: 80%;
@@ -290,6 +292,24 @@ body {
   display: inline-block;
   background-color: white;
   transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .header-sup__menu {
+    width: 100%;
+  }
+
+  .login {
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .registrarse, .iniciar-sesion {
+    width: 50%;
+    padding: 8px 10px;
+    text-align: center;
+  }
 }
 
 /* ============= estilos del registro==================*/
